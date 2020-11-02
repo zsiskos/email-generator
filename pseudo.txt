@@ -1,0 +1,49 @@
+Email randomizer
+
+Overall ask: 
+- want a website to generate account emails that satisfy your security requirements
+- bonus is if it sets up the email in your server
+- Stretch goal: to give user ability to change variables for emails (i.e. total number of characters)
+
+
+Specifics:
+- accessible by mobile
+- max. number of characters - 29 (can have 64 chars before @, 255 in domain part, total of 320) but does not always have to be 29 characters
+- account title, based on input from user
+- alphanumeric prior to and after the account title, random order, selection, length
+- min of 5 characters before and after the account title
+- no spaces, no special characters
+- no need to add domain, just ability to copy to clipboard and email (unless it hooks into an api for the server, then will need to select domain)
+
+
+input takes emailTitle - user hit generate
+picks number for length between 15 and 29, store that in charaterTotal
+counts the number of characters in emailTitle + 2
+subtract that from characterTotal and store new number
+it randomly assign number b/w 0-9 
+puts number on either side of emailTitle
+take characterTotal and it will randomly generate number from 5 - (characterTotal - 5)
+store new number in emailFrontTotal
+emailFront is generated randomly, length based on emailFrontTotal
+add emailFront to emailTitle
+take charaterTotal and subtract emailFrontTotal for emailBackTotal
+emailBack is generated based on this total
+add emailBack to emailTitle
+Display emailTitle
+Display copy and email buttons
+
+skjlsd 9 github 9 eoi23ruowe
+
+github
+20
+8
+12 characterTotal
+0 is random number
+0github0
+randomly generate from 5 - (12 - 5) = 5 - 7
+5 emailFrontTotal
+4u8iP = emailFront
+4u8iP0github0
+12 - 5 = 7 = emailBackTotal
+9eT52wW = emailBack
+4u8iP0github09eT52wW
