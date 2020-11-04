@@ -16,23 +16,50 @@ Specifics:
 - no need to add domain, just ability to copy to clipboard and email (unless it hooks into an api for the server, then will need to select domain)
 
 
+input takes emailTitle - user hits generate
+randomly generate numbers for:
+- emailFrontLength (b/w 5 - 15)
+- emailBackLength (b/w 5 - 15)
+- randomNumber ( 0 - 9)
+
+if:
+- total number is greater than 55 regenerate numbers
+
+- randomly generates two separate strings based on emailFrontLength and emailBackLength (alphanumeric only)
+
+
+output emailFront + randomNumber + emailTitle + randomNumber + emailBack
+display copy and email buttons
+
+
+
+
+
+
+
 input takes emailTitle - user hit generate
-picks number for length between 15 and 29, store that in charaterTotal
+picks number for emailLength between 15 and 29, store that in emailLength
 counts the number of characters in emailTitle + 2
-subtract that from characterTotal and store new number
+subtract that from emailLength and store new number
 it randomly assign number b/w 0-9 
-puts number on either side of emailTitle
-take characterTotal and it will randomly generate number from 5 - (characterTotal - 5)
-store new number in emailFrontTotal
-emailFront is generated randomly, length based on emailFrontTotal
-add emailFront to emailTitle
-take charaterTotal and subtract emailFrontTotal for emailBackTotal
+
+take emailLength and it will randomly generate number from 5 - (emailLength - 5)
+store new number in emailFrontLength
+
+emailFront is generated randomly, length based on emailFrontLength
+
+take emailLength and subtract emailFrontLength for emailBackLength
 emailBack is generated based on this total
-add emailBack to emailTitle
-Display emailTitle
+
+Display emailTitle - 
+emailFront +  randomNumber +  emailTitle + randomNumber +emailBack
+
 Display copy and email buttons
 
-skjlsd 9 github 9 eoi23ruowe
+
+
+
+skjlsd            9             github         9    eoi23ruowe
 
 github
 20

@@ -8,6 +8,24 @@
   <title>Secure Email Generator</title>
 </head>
 <body>
-  <h1>email Generator</h1>
+  <header class="header">Testing</header>
+  <div class="container-main">
+    <div class="inputs">
+      <input type="text" class="email" id="email-title-input" onfocus="this.value=''" value="Enter base for email">
+      <button class="btn-main" id="btn-generate">Generate</button>
+      <button class="btn-main" id="btn-init">Reset</button>
+    </div>
+    <div class="inputs" id="display">
+      <p>Your new email is: <span id="email-title-final"></span></p>
+      <button class="btn-main">Copy</button>
+      <button class="btn-main">Email</button>
+    </div>
+    <div class="inputs" id="send">
+      <input type="text"/>
+      <button class="btn-main">Send</button>
+    </div>
+  </div>
+  <footer class="footer">the bottom</footer>
 </body>
 </html>
+
