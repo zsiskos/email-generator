@@ -3,29 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <!--  Essential META Tags for social media -->
+   <meta property="og:title" content="Email Generator">
+   <meta property="og:description" content="Generate secure emails"> 
+   <meta property="og:image" content="images/website-image.png"> 
+   <meta property="og:url" content=" "> 
+   <meta name="twitter:card" content="Email Generator">
+   <!--  Non-Essential, But Recommended -->
+   <meta property="og:site_name" content="Email Generator">
+   <meta name="twitter:image:alt" content="Email Generator Screenshot"> 
+   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="https://kit.fontawesome.com/7344249496.js" crossorigin="anonymous"></script>
   <script src="js/script.js" defer></script>
-  <title>Secure Email Generator</title>
+  <title>Email Generator</title>
 </head>
 <body>
-  <header class="header">Testing</header>
+  <header class="header">
+    <h1>Email <i class="fas fa-cogs"></i> Generator </h1>
+  </header>
   <div class="container-main">
-    <div class="inputs">
-      <input type="text" class="email" id="email-title-input" onfocus="this.value=''" value="Enter base for email">
-      <button class="btn-main" id="btn-generate">Generate</button>
-      <button class="btn-main" id="btn-init">Reset</button>
+    <input type="text" class="email" id="email-title-input" onfocus="this.value=''" value="Enter base for email">
+    <div class="container-btn">
+      <button class="btn-main" id="btn-generate">GENERATE</button>
+      <button class="btn-main" id="btn-init">RESET</button>
     </div>
-    <div class="inputs" id="display">
-      <p>Your new email is: <span id="email-title-final"></span></p>
-      <button class="btn-main">Copy</button>
-      <button class="btn-main">Email</button>
+    <div class="container-display" id="display">
+      <p>Your new email is: </p>
+      <div class="container-email" id="email-title-final"></div>
     </div>
-    <div class="inputs" id="send">
-      <input type="text"/>
-      <button class="btn-main">Send</button>
+    <div class="container-display tooltip" id="copy-display">
+      <button class="btn-main" id="btn-copy"><span class="tooltiptext" id="myTooltip">Copy to clipboard</span>COPY</button>
     </div>
   </div>
-  <footer class="footer">the bottom</footer>
+  <footer class="footer">
+    <a href="https://github.com/zsiskos/" target="_blank">Created by zoë.Supernova</a>
+    <img src="images/GitHub-Mark-Light-32px.png" alt="github logo"/>
+  </footer>
 </body>
 </html>
-
